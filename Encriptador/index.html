@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/logo2.ico">
+</head>
+<body class="body">
+    <header></header>
+    <main class="contenedor-main">
+        <div class="contenedor-main-logo">
+            <img src="./images/Group 3.png" alt="Logo de Alura latam" class="imagen-logo">
+        </div>
+        <section class="contenedor-main-encriptador">
+            <div class="contenedor-textarea">
+                <textarea name="texto" id="texto-usuario" class="texto-usuario" placeholder="Ingrese el texto aqui"></textarea>
+            </div>
+            <p class="mensaje-informativo"><img src="./images/bi_exclamation-circle-fill.png" alt="Icono de alerta"><span id="texto-informativo" class="texto-informativo">Solo letras minúsculas y sin acentos.</span></p>
+            <div class="contenedor-encriptador-botones">
+                <button onclick="encriptando()" id="boton-encriptar" class="boton-encriptar">Encriptar</button>
+                <button onclick="desencriptando()" id="boton-desencriptar" class="boton-desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <section class="contenedor-main-resultado">
+            <div class="contenedor-main-resultado-previo">
+                <img id="Muñeco" src="./images/Muñeco.png" alt="Imagen de una persona encriptando" class="imagen-resultado">
+                <img src="./images/Errores.png" alt="Imagen de alerta de ERROR" class="imagen-error">
+                <div class="contenedor-resultado-texto">
+                    <h2 id="resultado" class="resultado-subtitulo">Ningún mensaje fue encontrado</h2>
+                    <p id="resultado-texto" class="resultado-texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>
+            <div class="contenedor-main-resultado-final">
+                <p id="texto-final" class="texto-final"></p>
+                <button onclick="copiando()" class="boton-copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="enlacesPersonales">
+            <h2 class="enlacesPersonalesTitulo"><strong>Accede a mis redes</strong></h2>
+            <a class="enlacesPersonalesLinks" href="https://github.com/Enrique-BaRa">
+                <img src="./images/github.png">
+                Github
+            </a>
+            <a class="enlacesPersonalesLinks" href="https://linkedin.com/in/">
+                <img src="./images/linkedin.png">
+                Linkedin
+        </div>
+        <p class="autor">Desarrollado por: Enrique Barajas.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
